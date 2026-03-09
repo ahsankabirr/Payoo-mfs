@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Daisyui CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwindcss CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/base.css"
+    />
+
+    <title>Payoo MFS</title>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display grid place-content-center bg-white">
+          <img class="max-w-4/6 mx-auto" src="./assets/Logo-full.png" alt="" />
+          <!-- Login section-->
+          <div class="hero">
+            <div class="hero-content flex-col">
+              <div class="card bg-base-100 w-80 shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <form action="#" class="fieldset">
+                    <label class="label">Mobile Number</label>
+                    <input
+                      id="number-Text"
+                      type="text"
+                      class="input"
+                      placeholder="Enter your number"
+                      required
+                    />
+                    <label class="label">4 Digit Pin</label>
+                    <input
+                      id="Pin-Number"
+                      type="password"
+                      class="input"
+                      placeholder="Enter 4 Digit Pin"
+                      required
+                    />
+                    <button id="button-login" class="btn btn-primary mt-4">
+                      Login
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Js -->
+    <script src="./js/login.js"></script>
+  </body>
+</html>
