@@ -15,16 +15,65 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/base.css"
     />
+
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/5166c358c8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Payoo MFS | Home</title>
   </head>
   <body>
     <main class="flex justify-center">
-      <div class="mockup-phone">
+      <div class="mockup-phone bg-base-200">
         <div class="mockup-phone-camera"></div>
-        <div class="mockup-phone-display text-white grid place-content-center">
-          It's Glowtime.
+        <div class="mockup-phone-display grid place-content-center">
+          <!-- Divider -->
+          <div class="flex w-full flex-col">
+            <div
+              class="card bg-base-300 rounded-box grid h-20 place-items-center"
+            >
+              <div class="stat-value">
+                €<span id="amount-money">40400</span>
+              </div>
+              <div class="stat-desc">Available Balance</div>
+            </div>
+            <div class="divider"></div>
+            <div
+              class="card rounded-box grid grid-cols-2 h-20 place-items-center"
+            >
+              <button class="btn btn-lg">Add Money</button>
+              <button class="btn btn-lg">Cash Out</button>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <form class="fieldset">
+              <label class="label">Amount to Add</label>
+              <input
+                id="amount"
+                type="text"
+                class="input"
+                placeholder="Add Amount to withdraw"
+              />
+              <label class="label">Pin Number</label>
+              <input
+                id="pin"
+                type="password"
+                class="input"
+                placeholder="Enter 4 digit pin number"
+              />
+
+              <button id="add-money" class="btn btn-primary mt-4">
+                Add Money
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
+
+    <!-- Script -->
+    <script src="./js/home.js"></script>
   </body>
 </html>
